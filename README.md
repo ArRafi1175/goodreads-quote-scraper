@@ -41,6 +41,27 @@ python goodreads_scraper.py
 ```
 Quotes will be saved in goodreads_quotes.json.
 
+➕ Adding More Authors
+To scrape quotes from additional authors:
+
+Open goodreads_scraper.py.
+
+Locate the authors dictionary near the top.
+
+Add new entries using this format:
+```python
+authors = {
+    "Author Name": "GoodreadsAuthorID",
+    ...
+}
+```
+👉 Example:
+```python
+"Antoine de Saint-Exupéry": "1020792"
+```
+To find an author’s ID, visit their Goodreads page. The ID appears in the URL like this:
+https://www.goodreads.com/author/show/1020792.Antoine_de_Saint_Exupery
+
 ⚠️ Notes
 • This script relies on Goodreads' public web pages and may break if the site structure changes.
 • Be mindful of their terms of service when scraping content.
